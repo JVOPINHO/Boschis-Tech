@@ -22,7 +22,7 @@ module.exports = {
         'second': '0 10px 40px -12px #00FF8052'
       },
       screens: {
-        'note': {'max': '1200px'}
+        'note': {'max': '1200px'},
       }
     },
   },

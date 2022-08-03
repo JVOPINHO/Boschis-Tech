@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.svg">
     <link rel="stylesheet" href="css/tailwind.css">
-    <title>Boschi's Tech - Login</title>
+    <title>Boschi's Tech - Cadastro</title>
 </head>
 <body class="font-NotoSans bg-green flex justify-center">
 
-    <main class="w-screen h-screen flex items-center justify-center">
+    <main class="w-9/12 h-full flex items-center justify-center m-4">
         <div class="flex items-center bg-darkBlue text-lightgreen p-8 rounded-xl m-4 note:flex-col">
             <div class="flex flex-wrap m-4 leading-loose font-extrabold">
                 <h1>Bem vindo ao app <span class="underline">Boschi's Tech.</span></h1>
-                <h2 class="w-9/12 note:w-full">Faça login para aproveitar melhor o aplicativo.</h2>
+                <h2 class="w-9/12 note:w-full">Crie sua conta e tenha acesso exclusivo ao nosso site.</h2>
                 <img class="note:hidden" src="img/logo.svg" alt="logo">
             </div>
-            <form action="#" class="bg-darkBlue2 rounded-xl p-4 shadow-first w-9/12">
+            <form action="#" class="bg-darkBlue2 w-9/12 rounded-xl p-4 shadow-first">
                 <div class="flex flex-col text-lightPurple p-2">
-                    <h2 class="text-center uppercase text-green font-extrabold">Login</h2>
+                    <h2 class="text-center uppercase text-green font-extrabold">Cadastre-se</h2>
+                    <label class="m-4 ml-0" for="name">Nome</label>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="name" name="name" id="name" placeholder="Digite seu nome..." required>
+                </div>
+                <div class="flex flex-col text-lightPurple p-2">
                     <label class="m-4 ml-0" for="email">Email</label>
                     <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="email" name="email" id="email" placeholder="Digite seu email..." required>
                 </div>
@@ -28,11 +32,17 @@
                     <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="password" name="password" id="password" placeholder="Digite sua senha..." minlength="6" maxlength="12" onkeyup="strongPassword()" required>
                     <img class="flex w-8 self-end -m-8 mx-2 cursor-pointer" src="img/eyeClose.png" id="eye" alt="eye">
                     <div class="mt-11" id="status"></div>
-                    <button class="bg-green text-darkBlue border-none rounded-sm m-4 w-9/12 mx-auto p-2 uppercase font-extrabold cursor-pointer shadow-second hover:bg-darkBlue transition ease-in-out delay-150 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300" type="submit">Login</button>
+                </div>
+                <div class="flex flex-col text-lightPurple p-2">
+                    <label class="m-4 ml-0" for="password">Repita a senha</label>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="password" name="password" id="rptpassword" placeholder="Repita a senha..." minlength="6" maxlength="12" onkeyup="passwordEqual()" required>
+                    <img class="flex w-8 self-end -m-8 mx-2 cursor-pointer" src="img/eyeClose.png" id="otherEye" alt="eye">
+                    <div class="mt-11" id="checkEqual"></div>
+                    <button class="bg-green text-darkBlue border-none rounded-sm m-4 w-7/12 mx-auto p-2 uppercase font-extrabold cursor-pointer shadow-second hover:bg-darkBlue transition ease-in-out delay-150 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300" type="submit">Cadastrar</button>
                 </div>
                 <div class="text-center">
                     <span>
-                        <a class="text-sm" href="forgotPassword.html">Esqueci a senha</a>
+                        <p class="text-sm text-white text-center">Já possui conta? Faça o <a class="text-lightgreen" href="login.html">login.</a></p>
                     </span>
                 </div>
             </form>

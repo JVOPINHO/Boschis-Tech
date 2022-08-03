@@ -45,7 +45,7 @@ function strongPassword() {
 }
 
 function passwordEqual() {
-    if (rptpassword.value === input.value) {
+    if (rptpassword.value === password.value) {
         check.innerHTML = `<p class='text-green font-bold'>As senhas são iguais.</p>`
     } else {
         check.innerHTML = `<p class='text-red-500 font-bold'>As senhas são diferentes.</p>`
