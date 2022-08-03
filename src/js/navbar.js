@@ -1,14 +1,14 @@
-let button = document.querySelector("#mobile-button")
-let links = document.querySelector("#mobile-menu")
-let list = document.querySelector("#mobile-list")
+const button = document.querySelector("#responsiveBtn")
+const container = document.querySelector("#links-container")
+const list = document.querySelector("#list")
 
 button.addEventListener("click", function() {
-    const divHeight = links.getBoundingClientRect().height
-    const listHeight = list.getBoundingClientRect().height
+    const height = container.getBoundingClientRect().height
+    const linksHeight = container.getBoundingClientRect().height
 
-    if (divHeight === 0) {
-        links.style.height = `${listHeight}px`
+    if (height === 0) {
+        container.style.height = `${linksHeight}px`
     } else {
-        links.style.height = 0
+        container.style.height = 0
     }
 })

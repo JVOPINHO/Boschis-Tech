@@ -1,15 +1,27 @@
-let input = document.querySelector("#password")
-let imgEye = document.querySelector("#img")
+let password = document.querySelector("#password")
+let imgEye = document.querySelector("#eye")
 let rptpassword = document.querySelector("#rptpassword")
-let otherImg = document.querySelector("#otherImg")
+let otherEye = document.querySelector("#otherEye")
 let check = document.querySelector("#checkEqual")
 
 imgEye.addEventListener("click", function() {
-    input.type = input.type == 'text' ? 'password' : 'text' // Se a condição for verdadeira ele mostra a senha em texto, se não ele volta a esconder ela.
+	if (password.getAttribute('type') == 'password') {
+		password.setAttribute('type', 'text')
+		imgEye.src = '../img/eyeOpen.png'
+	} else {
+		password.setAttribute('type', 'password')
+		imgEye.src = '../img/eyeClose.png'
+	}
 })
 
-otherImg.addEventListener("click", function() {
-    rptpassword.type = rptpassword.type == 'text' ? 'password' : 'text'
+otherEye.addEventListener("click", function() {
+	if (rptpassword.getAttribute('type') == 'password') {
+		rptpassword.setAttribute('type', 'text')
+		otherEye.src = '../img/eyeOpen.png'
+	} else {
+		rptpassword.setAttribute('type', 'password')
+		otherEye.src = '../img/eyeClose.png'
+	}
 })
 
 function strongPassword() { 
@@ -24,7 +36,7 @@ function strongPassword() {
 	} else {  	
 		if ($('#password').val().match(numbers) && $('#password').val().match(tiny) && $('#password').val().match(uppercase) && $('#password').val().match(diferent)) { 
             // Se tiver todos esses atributos, mostra essa.
-			$('#status').html("<p class='text-green-500 font-bold'>Forte</p>")
+			$('#status').html("<p class='text-green font-bold'>Forte</p>")
 		} else { 
             // Se só tiver alguns, mostra essa.
 			$('#status').html("<p class='text-orange-500 font-bold'>Médio</p>")
@@ -34,7 +46,7 @@ function strongPassword() {
 
 function passwordEqual() {
     if (rptpassword.value === input.value) {
-        check.innerHTML = `<p class='text-green-500 font-bold'>As senhas são iguais.</p>`
+        check.innerHTML = `<p class='text-green font-bold'>As senhas são iguais.</p>`
     } else {
         check.innerHTML = `<p class='text-red-500 font-bold'>As senhas são diferentes.</p>`
     }
