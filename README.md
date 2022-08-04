@@ -1,15 +1,15 @@
 <div align=center>
-  <img src="https://user-images.githubusercontent.com/74377158/173904904-9741274f-3253-4491-a2ca-62fe5235b3c9.png" width=200>
+  <img src="https://user-images.githubusercontent.com/74377158/182942082-e9318084-2cf4-4878-8074-e7377fd66b2a.png" width=200>
 </div>
-  
+
 <h3> :dart: Objetivos do site</h3>
 Esse é um projeto de um aplicativo financeiro que estou desenvolvendo ao longo do curso de Análise e Desenvolvimento de Sistemas na <strong>FIAP</strong>.
-  
-# <h3> :pencil: Dashboard</h3>  
-![dashboard](https://user-images.githubusercontent.com/74377158/174906138-fbccf3d8-1c3a-4166-bc37-7cc24861e4d0.jpg)
 
-# <h3> :pencil: Tela de Cadastro</h3>
-![register](https://user-images.githubusercontent.com/74377158/173920167-1eb57b25-acb1-4f58-987c-46ba32356d63.png)
+# <h3> :pencil: Tela de Cadastro</h3> 
+![register](https://user-images.githubusercontent.com/74377158/182943743-c58ceaa3-8863-4454-971e-58940e097cc6.jpg)
+
+# <h3> :pencil: Dashboard</h3>  
+![home](https://user-images.githubusercontent.com/74377158/182940574-147ac431-4812-4b36-a0c8-fcc643389965.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
 No terminal, clone o projeto:
@@ -52,4 +52,4 @@ Para instalar o tailwind é só clicar nesse [link](https://tailwindcss.com/docs
 [<img src="https://user-images.githubusercontent.com/74377158/173900850-b6afcc77-36a5-4254-b63f-983397918d54.jpg" width=130><br><sub>Vinícius Boschi</sub>](https://github.com/Vinicius-Boschi)
 
 # <h3> :bangbang: Licença:</h3>
-<p> Todos os direitos reservados :copyright: 2022 - Fintech# Fintech
+<p> Todos os direitos reservados :copyright: 2022 - Boschi's Tech
