@@ -4,64 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.svg">
     <link rel="stylesheet" href="css/tailwind.css">
-    <title>Fintech Editar Perfil</title>
+    <title>Boschi's Tech - Login</title>
 </head>
-<body class="bg-background flex justify-center">
+<body class="font-NotoSans bg-green flex justify-center">
 
-    <main class="text-slate-50 p-10">
-        <div>
-            <h1 class="text-4xl pb-2">Editar o perfil</h1>
-            <p class="text-sm note:w-[25%]">Edite aqui as informações do seu perfil.</p>
-        </div>
-        
-        <div class="flex items-start">
-            <form action="#" method="#" class="text-slate-900 grid pt-5 phone:basis-0 tablet:basis-0 note:basis-0">
-                <label class="text-slate-50 p-5" for="name">
-                    Nome
-                    <input class="bg-input text-slate-900 p-1 rounded-md border border-slate-900 ml-20 phone:ml-0 tablet:ml-0 note:ml-0" type="text" name="name" id="name" placeholder="Digite seu nome" required>
-                </label>
-
-                <label class="text-slate-50 p-5" for="email">
-                    E-mail
-                    <input class="bg-input text-slate-900 p-1 rounded-md border border-slate-900 ml-20 phone:ml-0 tablet:ml-0 note:ml-0" type="email" name="email" id="email" placeholder="Digite seu email" required>
-                </label>
-
-                <label class="text-slate-50 p-5" for="city">
-                    Cidade
-                    <input class="bg-input text-slate-900 p-1 rounded-md border border-slate-900 ml-[4.6rem] phone:ml-0 tablet:ml-0 note:ml-0" type="text" name="city" id="city" placeholder="Digite sua cidade" required>
-                </label>
-
-                <label class="text-slate-50 p-5" for="password">
-                    Senha
-                    <input class="bg-input text-slate-900 p-1 rounded-md border border-slate-900 ml-20 phone:ml-0 tablet:ml-0 note:ml-0" type="password" name="password" id="password" placeholder="Digite sua senha" minlength="6" maxlength="12" onkeyup="strongPassword()" required>
-                    <img class="h-5 float-right m-2 -mx-6 cursor-pointer" id="img" src="http://i.stack.imgur.com/H9Sb2.png" alt="olho">
-                    <span class="block pt-4" id="status"></span>
-                </label>
-
-                <div class="text-slate-50 text-sm flex justify-end p-5">
-                    <button class="bg-button p-1 rounded-md border border-slate-900 hover:bg-hoverButton ease-in duration-300">Salvar alterações</button>
+    <main class="w-screen h-screen flex items-center justify-center">
+        <div class="flex items-center bg-darkBlue text-lightgreen p-8 rounded-xl m-4 note:flex-col">
+            <div class="flex flex-wrap m-4 leading-loose font-extrabold">
+                <h2 class="w-9/12 note:w-full">Edite aqui as informações do seu perfil.</h2>
+                <img class="note:hidden" src="img/logo.svg" alt="logo">
+            </div>
+            <form action="#" class="bg-darkBlue2 rounded-xl p-4 shadow-first w-6/12">
+                <div class="flex flex-col text-lightPurple p-2">
+                    <h2 class="text-center uppercase text-green font-extrabold">Editar o perfil</h2>
+                    <label class="m-4 ml-0" for="name">Nome</label>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="name" name="name" id="name" placeholder="Digite seu nome..." required>
                 </div>
-
-                <div class="w-full border-t border-slate-900"></div>
-
-                <div class="text-textRemove text-lg pt-5">    
-                    <p>Excluir a conta</p>
+                <div class="flex flex-col text-lightPurple p-2">
+                    <label class="m-4 ml-0" for="password">Email</label>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="email" name="email" id="email" placeholder="Digite seu email..." required>
                 </div>
-
-                <div class="text-slate-50 text-sm flex pt-5">
-                    <button class="bg-remove p-1 rounded-md border border-slate-900 w-28 hover:bg-hoverRemove ease-in duration-300">Excluir conta</button>
+                <div class="flex flex-col text-lightPurple p-2">
+                    <label class="m-4 ml-0" for="password">Senha</label>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="password" name="password" id="password" placeholder="Digite sua senha..." minlength="6" maxlength="12" onkeyup="strongPassword()" required>
+                    <img class="flex w-8 self-end -m-8 mx-2 cursor-pointer" src="img/eyeClose.png" id="eye" alt="eye">
+                    <div class="mt-11" id="status"></div>
+                    <button class="bg-green text-darkBlue border-none rounded-sm m-4 w-9/12 mx-auto p-2 uppercase font-extrabold cursor-pointer shadow-second hover:bg-darkBlue transition ease-in-out delay-150 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300" type="submit">Salvar</button>
+                </div>
+                <div class="text-center">
+                    <span>
+                        <p class="text-sm text-white text-center">Voltar ao <a class="text-lightgreen" href="index.html">inicio.</a></p>
+                    </span>
                 </div>
             </form>
-
-            <div class="h-screen border-r border-slate-900 p-1 -mt-20 phone:hidden tablet:hidden note:h-[75vw]"></div>
-
-            <div class="flex flex-col justify-end phone:hidden tablet:hidden">
-                <img class="-mt-28 m-10 h-screen w-full" src="img/money_picture.png" alt="money picture">
-            </div>
         </div>
     </main>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
 

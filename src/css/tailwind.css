@@ -73,3 +73,37 @@
         border-spacing: 0;
     }
 }
+
+@layer components {
+
+    header a, #links-container {
+        transition: all .3s linear;
+    }
+
+    header a::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+
+    header a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    main button:hover, 
+    main button:not(:hover), 
+    footer a,
+    footer a::after {
+        transition: all 1s linear;
+    }
+
+    footer a::after {
+        box-shadow: 0 0 0 3px #FFFFFF;
+    }
+
+    footer a:hover::after {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}

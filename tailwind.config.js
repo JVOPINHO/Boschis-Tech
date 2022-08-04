@@ -9,10 +9,16 @@ module.exports = {
       colors: {
         lightgreen: '#77FFC0',
         green: '#00FF88',
+        darkGreen: '#04BB00',
         darkBlue: '#201B2C',
         darkBlue2: '#2F2841',
         lightPurple: '#867D98',
-        purple: '#514869'
+        purple: '#514869',
+        lightGray: '#D9D9D9',
+        gray: '#999999',
+        grayTwo: '#A7A7A7',
+        red: '#FF0000',
+        transparent: '#ffffff1a'
       },
       fontFamily: {
         'NotoSans': ['Noto Sans', 'sans-serif']

@@ -4,152 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.svg">
     <link rel="stylesheet" href="css/tailwind.css">
-    <title>Fintech Home</title>
+    <title>Boschi's Tech - Home</title>
 </head>
-<body class="bg-background">
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" class="flex items-center">
-                <img src="img/logo.png" class="mr-3 h-20 sm:h-12" alt="Fintech Logo">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Fintech</span>
-            </a>
-            <div class="flex md:order-2">
-                <a href="login.html" class="block py-2 pr-4 pl-3 text-gray-700 md:border-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
+<body class="font-NotoSans bg-green">
 
-                <button class="text-white bg-blue-700 hover:bg-blue-800 rounded-lg border-slate-900 text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
-                    <a href="register.html">Cadastro</a>
-                </button>
+    <header class="bg-darkBlue">
+        <div>
+            <nav class="w-full m-auto flex justify-between p-4 note:block" role="navigation">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green text-xl font-bold">Boschi's Tech</h1>
+                    <button class="hidden bg-none border-none text-green cursor-pointer text-4xl p-4 note:block" id="responsiveBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="h-auto note:h-0 note:overflow-hidden" id="links-container">
+                    <ul class="flex text-2xl p-8 note:block note:float-left" id="list">
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ml-2">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="#">
+                                <i class="fa-solid fa-address-card"></i>
+                                <span class="ml-2">Sobre nós</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="#">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span class="ml-2">Serviços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="#">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <span class="ml-2">Contato</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="editar_perfil.html">
+                                <i class="fa-solid fa-pen"></i>
+                                <span class="ml-2">Editar o perfil</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-                <button data-collapse-toggle="mobile-menu" type="button" id="mobile-button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
+    <main>
+        <div class="inline-flex flex-col p-4 leading-loose bg-lightGray rounded-xl w-2/12 mt-12 ml-16 note:w-auto">
+            <i class="fa-solid fa-wallet text-4xl"></i>
+            <span class="text-2xl font-bold text-darkGreen">R$ 143.250,00</span>
+            <p class="text-xl">Total da conta</p>
+        </div>
+        <div class="inline-flex flex-col p-4 leading-loose bg-lightGray rounded-xl w-2/12 mt-12 ml-16 note:w-auto">
+            <i class="fa-solid fa-arrow-down text-4xl"></i>
+            <span class="text-2xl font-bold text-red">R$ 150.300,00</span>
+            <p class="text-xl">Total dos gastos</p>
+        </div>
         
-            <div class="overflow-hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu">
-                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" id="mobile-list">
-                    <li>
-                        <a href="index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre nós</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
-                    </li>
-                    <li>
-                        <a href="editar_perfil.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Editar o perfil</a>
-                    </li>
-                </ul>
+        <div class="m-12 mx-auto bg-lightGray p-4 w-7/12 rounded-xl note:w-[95%]">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold note:text-2xl">Receita</h1>
+                <button class="bg-gray rounded-full p-4 hover:bg-black hover:text-white note:p-2">
+                    <i class="fa-solid fa-plus text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex justify-evenly mt-8 mx-auto text-lg font-bold border-b-[1px] border-black border-solid leading-10 note:text-sm">
+                <h3>Data</h3>
+                <h3>Valor</h3>
+                <h3>Categoria</h3>
+                <h3>Descrição</h3>
+            </div>
+            <div class="flex justify-evenly text-base font-bold items-center p-4 note:text-sm">
+                <span>25/01/2022</span>
+                <span class="note:ml-4">
+                    <i class="fa-solid fa-arrow-down text-red"></i>
+                    R$ 150,00
+                </span>
+                <span class="bg-grayTwo rounded-3xl p-2 note:ml-4">Supermercado</span>
+                <span class="note:ml-4">Mercado</span>
+            </div>
+            <div class="flex justify-evenly text-base font-bold items-center p-4 note:text-sm">
+                <span>31/01/2022</span>
+                <span class="note:ml-4">
+                    <i class="fa-solid fa-arrow-up text-darkGreen"></i>
+                    R$ 200,00
+                </span>
+                <span class="bg-grayTwo rounded-3xl p-2 note:ml-4">Remuneração</span>
+                <span class="note:ml-4">Freelance</span>
             </div>
         </div>
-      </nav>
+    </main>
 
-      <main class="text-slate-50 p-10">
-        <div class="flex justify-around items-center">
-            <p class="text-4xl">Fintech</p>
-            <select name="months" class="bg-button p-1 rounded-md border border-slate-900 w-28 h-8 text-center hover:bg-hoverButton ease-in duration-300 cursor-pointer" id="months">
-                <option value="Janeiro">Janeiro</option>
-                <option value="Fevereiro">Fevereiro</option>
-                <option value="Março">Março</option>
-                <option value="Abril">Abril</option>
-                <option value="Maio">Maio</option>
-                <option value="Junho" selected>Junho</option>
-                <option value="Julho">Julho</option>
-                <option value="Agosto">Agosto</option>
-                <option value="Setembro">Setembro</option>
-                <option value="Outubro">Outubro</option>
-                <option value="Novembro">Novembro</option>
-                <option value="Dezembro">Dezembro</option>
-            </select>
+    <footer class="flex items-center justify-around bg-darkBlue text-white h-48 p-4 note:flex-col note:justify-center note:h-full">
+        <div class="leading-loose">
+            <h3 class="text-2xl text-green font-bold">Boschi's Tech</h3>
+            <p class="text-sm leading-loose">&copy; 2022 - <span class="text-sm font-bold text-green">Boschi's Tech</span></p>
+            <p class="text-sm leading-loose">Todos os direitos reservados</p>
         </div>
+        <div>
+            <a class="text-4xl text-center inline-block cursor-pointer m-4 ml-0 w-20 h-20 leading-loose relative bg-transparent rounded-full hover:bg-white hover:text-black after:content-[''] after:absolute after:w-full after:h-full after:rounded-full after:box-content after:top-0 after:left-0 after:opacity-0" href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="text-4xl text-center inline-block cursor-pointer m-4 ml-0 w-20 h-20 leading-loose relative bg-transparent rounded-full hover:bg-white hover:text-black after:content-[''] after:absolute after:w-full after:h-full after:rounded-full after:box-content after:top-0 after:left-0 after:opacity-0" href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="text-4xl text-center inline-block cursor-pointer m-4 ml-0 w-20 h-20 leading-loose relative bg-transparent rounded-full hover:bg-white hover:text-black after:content-[''] after:absolute after:w-full after:h-full after:rounded-full after:box-content after:top-0 after:left-0 after:opacity-0" href="#">
+                <i class="fa-solid fa-envelope-open"></i>
+            </a>
+        </div>
+    </footer>
 
-        <div class="bg-white border rounded-md border-slate-500 p-4 text-xl w-72 h-auto text-center">
-            <span class="text-slate-900">Saldo da conta:</span>
-            <span class="text-green-500 pl-1">R$1.880,10</span>
-        </div>
-
-        <div class="flex items-center justify-evenly note:block tablet:block phone:block">
-            <div class="contents">
-                <div class="pt-10">
-                    <div class="p-4">
-                        <h1 class="text-lg">Mês de Junho</h1>
-                    </div>
-                    <div class="bg-white text-slate-900 w-96 h-full border border-slate-900 rounded-md p-8 phone:w-80">
-                        <div class="">
-                            <span>Renda</span>
-                            <p class="font-bold text-green-500">R$ 2.000,00</p>
-                        </div>
-                        <div class="pt-5">
-                            <span>Gastos</span>
-                            <p class="font-bold text-red-500">R$ 219,90</p>
-                        </div>
-                        <div class="text-slate-50 flex justify-around pt-6 phone:inline-block">
-                            <button class="bg-button p-1 rounded-md border border-slate-900 w-[7rem] h-[2rem] hover:bg-hoverButton ease-in duration-300">Ver detalhes</button>
-                            <button class="bg-button p-1 rounded-md border border-slate-900 hover:bg-hoverButton ease-in duration-300 phone:mt-4">Adicionar transação</button>
-                        </div>
-                    </div>
-                </div>
+    <script src="js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/131a4c7b84.js"></script>
     
-                <div class="pt-10">
-                    <div class="p-4">
-                        <h1 class="text-lg">Extrato do Mês</h1>
-                    </div>
-                    <div class="bg-white text-slate-900 w-96 h-full border border-slate-900 rounded-md p-8 phone:w-80">
-                        <div class="text-center text-lg -mt-5">
-                            <h2>Últimas Transações</h2>
-                        </div>
-                        <div class="table-cell align-top pt-6">
-                            <img src="img/carrinho-de-compras.png" alt="categoria">
-                        </div>
-                        <div class="table-cell pl-2">
-                            <span>Mercado</span>
-                            <p>Mercado</p>
-                        </div>
-                        <div class="table-cell float-right -mt-16">
-                            <span>Gastos</span>
-                            <p class="font-bold text-red-500"> - R$ 200,00</p>
-                        </div>
-    
-                        <div class="table-cell align-top pt-6">
-                            <img src="img/assistir-tv.png" alt="categoria">
-                        </div>
-                        <div class="table-cell pl-2">
-                            <span>Televisão</span>
-                            <p>Hbo Max</p>
-                        </div>
-                        <div class="table-cell float-right -mt-16">
-                            <span>Gastos</span>
-                            <p class="font-bold text-red-500"> - R$ 19,90</p>
-                        </div>
-    
-                        <div class="table-cell align-top pt-6">
-                            <img src="img/dinheiro.png" alt="categoria">
-                        </div>
-                        <div class="table-cell pl-2">
-                            <span>Remuneração</span>
-                            <p>Pix Freelance</p>
-                        </div>
-                        <div class="table-cell float-right -mt-16">
-                            <span>Gastos</span>
-                            <p class="font-bold text-green-500"> - R$ 100,00</p>
-                        </div>
-    
-                        <div class="text-slate-50 flex justify-around pt-6 phone:inline-block">
-                            <button class="bg-button p-1 rounded-md border border-slate-900 w-[7rem] h-[2rem] hover:bg-hoverButton ease-in duration-300">Ver detalhes</button>
-                            <button class="bg-button p-1 rounded-md border border-slate-900 hover:bg-hoverButton ease-in duration-300 phone:mt-4">Adicionar transação</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </main>
-      
-      <script src="js/navbar.js"></script>
 </body>
 </html>
