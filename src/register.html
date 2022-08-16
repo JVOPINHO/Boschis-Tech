@@ -22,16 +22,19 @@
                     <h2 class="text-center uppercase text-green font-extrabold">Cadastre-se</h2>
                     <label class="m-4 ml-0" for="name">Nome</label>
                     <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="name" name="name" id="name" placeholder="Digite seu nome..." required>
+                    <span class="hidden text-red mt-2 pl-2" id="invalid">Este campo não está válido</span>
                 </div>
                 <div class="flex flex-col text-lightPurple p-2">
                     <label class="m-4 ml-0" for="email">Email</label>
-                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="email" name="email" id="email" placeholder="Digite seu email..." required>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="email" name="email" id="email" datatipo="email" placeholder="Digite seu email..." required>
+                    <span class="hidden">Este campo não está válido</span>
                 </div>
                 <div class="flex flex-col text-lightPurple p-2">
                     <label class="m-4 ml-0" for="password">Senha</label>
-                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="password" name="password" id="password" placeholder="Digite sua senha..." minlength="6" maxlength="12" onkeyup="strongPassword()" required>
+                    <input class="bg-purple text-white border-none rounded p-2 placeholder:text-sm" type="password" name="password" id="password" placeholder="Digite sua senha..." minlength="6" maxlength="12" onkeyup="strongPassword()" datatipo="password" required>
                     <img class="flex w-8 self-end -m-8 mx-2 cursor-pointer" src="img/eyeClose.png" id="eye" alt="eye">
                     <div class="mt-11" id="status"></div>
+                    <span class="hidden">Este campo não está válido</span>
                 </div>
                 <div class="flex flex-col text-lightPurple p-2">
                     <label class="m-4 ml-0" for="password">Repita a senha</label>

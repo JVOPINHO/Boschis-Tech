@@ -22,7 +22,7 @@
                 <div class="h-auto note:h-0 note:overflow-hidden" id="links-container">
                     <ul class="flex text-2xl p-8 note:block note:float-left" id="list">
                         <li>
-                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="#">
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="register.html">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="ml-2">Home</span>
                             </a>
@@ -57,50 +57,70 @@
         </div>
     </header>
 
-    <main>
-        <div class="inline-flex flex-col p-4 leading-loose bg-lightGray rounded-xl w-2/12 mt-12 ml-16 note:w-auto">
-            <i class="fa-solid fa-wallet text-4xl"></i>
-            <span class="text-2xl font-bold text-darkGreen">R$ 143.250,00</span>
-            <p class="text-xl">Total da conta</p>
-        </div>
-        <div class="inline-flex flex-col p-4 leading-loose bg-lightGray rounded-xl w-2/12 mt-12 ml-16 note:w-auto">
-            <i class="fa-solid fa-arrow-down text-4xl"></i>
-            <span class="text-2xl font-bold text-red">R$ 150.300,00</span>
-            <p class="text-xl">Total dos gastos</p>
-        </div>
+    <main class="m-auto w-[90vw]">
+        <section class="grid gap-8 grid-cols-3 m-8 note:grid-cols-1">
+            <div class="py-6 px-8 bg-white">
+                <h3 class="flex justify-between items-center text-base">
+                    <span>Entradas</span>
+                    <img src="img/income.svg" alt="arrow up">
+                </h3>
+                <p class="text-3xl text-darkGreen mt-4">R$ 100,00</p>
+            </div>
+            <div class="py-6 px-8 bg-white">
+                <h3 class="flex justify-between items-center text-base">
+                    <span>Saídas</span>
+                    <img src="img/expense.svg" alt="arrow down">
+                </h3>
+                <p class="text-3xl text-red mt-4">R$ 19,90</p>
+            </div>
+            <div class="py-6 px-8 bg-darkGreen">
+                <h3 class="flex justify-between items-center text-base">
+                    <span>Total</span>
+                    <img src="img/total.svg" alt="cifrão">
+                </h3>
+                <p class="text-3xl text-white mt-4">R$ 80,10</p>
+            </div>
+        </section>
         
-        <div class="m-12 mx-auto bg-lightGray p-4 w-7/12 rounded-xl note:w-[95%]">
-            <div class="flex items-center justify-between">
-                <h1 class="text-3xl font-bold note:text-2xl">Receita</h1>
-                <button class="bg-gray rounded-full p-4 hover:bg-black hover:text-white note:p-2">
-                    <i class="fa-solid fa-plus text-2xl"></i>
-                </button>
-            </div>
-            <div class="flex justify-evenly mt-8 mx-auto text-lg font-bold border-b-[1px] border-black border-solid leading-10 note:text-sm">
-                <h3>Data</h3>
-                <h3>Valor</h3>
-                <h3>Categoria</h3>
-                <h3>Descrição</h3>
-            </div>
-            <div class="flex justify-evenly text-base font-bold items-center p-4 note:text-sm">
-                <span>25/01/2022</span>
-                <span class="note:ml-4">
-                    <i class="fa-solid fa-arrow-down text-red"></i>
-                    R$ 150,00
-                </span>
-                <span class="bg-grayTwo rounded-3xl p-2 note:ml-4">Supermercado</span>
-                <span class="note:ml-4">Mercado</span>
-            </div>
-            <div class="flex justify-evenly text-base font-bold items-center p-4 note:text-sm">
-                <span>31/01/2022</span>
-                <span class="note:ml-4">
-                    <i class="fa-solid fa-arrow-up text-darkGreen"></i>
-                    R$ 200,00
-                </span>
-                <span class="bg-grayTwo rounded-3xl p-2 note:ml-4">Remuneração</span>
-                <span class="note:ml-4">Freelance</span>
-            </div>
+        <div class="ml-8">
+            <a href="#" class="cursor-pointer">+ Nova transação</a>
         </div>
+
+        <section class="overflow-x-auto">
+            <table class="w-full py-4 px-8 text-left border-separate border-spacing-y-[0.5rem]">
+                <thead>
+                    <tr class="bg-white">
+                        <th class="py-4 px-8 text-left">Data</th>
+                        <th class="py-4 px-8 tex-left">Valor</th>
+                        <th class="py-4 px-8 text-left">Categoria</th>
+                        <th class="py-4 px-8 text-left">Descrição</th>
+                        <th>
+                            <i class="fas fa-filter"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="opacity-90 bg-white">
+                        <td class="py-4 px-8 text-left">15/08/2022</td>
+                        <td class="py-4 px-8 text-left text-red">19,90</td>
+                        <td class="py-4 px-8 text-left">Streaming</td>
+                        <td class="py-4 px-8 text-left">Streaming</td>
+                        <td>
+                            <img src="img/minus.svg" alt="remove">
+                        </td>
+                    </tr>
+                    <tr class="opacity-90 bg-white">
+                        <td class="py-4 px-8 text-left">15/08/2022</td>
+                        <td class="py-4 px-8 text-left text-darkGreen">100,00</td>
+                        <td class="py-4 px-8 text-left">Remuneração</td>
+                        <td class="py-4 px-8 text-left">Freelance</td>
+                        <td>
+                            <img src="img/minus.svg" alt="remove">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer class="flex items-center justify-around bg-darkBlue text-white h-48 p-4 note:flex-col note:justify-center note:h-full">
@@ -123,7 +143,7 @@
     </footer>
 
     <script src="js/navbar.js"></script>
-    <script src="https://kit.fontawesome.com/131a4c7b84.js"></script>
+    <script src="https://kit.fontawesome.com/131a4c7b84.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
