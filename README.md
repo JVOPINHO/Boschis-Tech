@@ -9,7 +9,7 @@ Esse é um projeto de um aplicativo financeiro que estou desenvolvendo ao longo 
 ![register](https://user-images.githubusercontent.com/74377158/182943743-c58ceaa3-8863-4454-971e-58940e097cc6.jpg)
 
 # <h3> :pencil: Dashboard</h3>  
-![home](https://user-images.githubusercontent.com/74377158/182940574-147ac431-4812-4b36-a0c8-fcc643389965.jpg)
+![home](https://user-images.githubusercontent.com/74377158/184972541-a2bfb17e-7b39-4812-9257-2fef7633d9f5.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
 No terminal, clone o projeto:
