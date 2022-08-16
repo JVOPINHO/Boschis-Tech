@@ -29,6 +29,7 @@ module.exports = {
       },
       screens: {
         'note': {'max': '1200px'},
+        'phone': {'min': '375px', 'max': '639px'}
       }
     },
   },

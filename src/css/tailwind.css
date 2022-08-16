@@ -106,4 +106,8 @@
         opacity: 1;
         transform: scale(1.15);
     }
+
+    footer a::before {
+        transition: all 3s linear;
+    }
 }
