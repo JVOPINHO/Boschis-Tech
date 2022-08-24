@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.svg">
     <link rel="stylesheet" href="css/tailwind.css">
-    <title>Boschi's Tech - Home</title>
+    <title>Boschi's Tech - Edição concluída</title>
 </head>
 <body class="font-NotoSans bg-green">
 
@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="registerProduct.html">
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="register_product.html">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="ml-2">Produtos</span>
                             </a>
@@ -63,53 +63,17 @@
         </div>
     </header>
 
-    <main class="m-auto w-[90vw]">
-        <section class="grid gap-8 grid-cols-3 m-8 note:grid-cols-1">
-            <div class="py-6 px-8 bg-white">
-                <h3 class="flex justify-between items-center text-base">
-                    <span>Entradas</span>
-                    <img src="img/income.svg" alt="arrow up">
-                </h3>
-                <p class="text-3xl text-darkGreen mt-4" id="income"></p>
-            </div>
-            <div class="py-6 px-8 bg-white">
-                <h3 class="flex justify-between items-center text-base">
-                    <span>Saídas</span>
-                    <img src="img/expense.svg" alt="arrow down">
-                </h3>
-                <p class="text-3xl text-red mt-4" id="expense"></p>
-            </div>
-            <div class="py-6 px-8 bg-darkGreen">
-                <h3 class="flex justify-between items-center text-base">
-                    <span>Total</span>
-                    <img src="img/total.svg" alt="cifrão">
-                </h3>
-                <p class="text-3xl text-white mt-4" id="amount"></p>
-            </div>
+    <main class="px-4 flex flex-col items-center justify-center mb-10">
+        <section class="flex flex-col items-center text-center bg-white rounded-xl w-full max-w-2xl p-7 box-border mb-4 mt-10 shadow-md">
+            <span class="block w-14 h-14 mb-4">
+                <img src="img/checkmark.svg" alt="checkmark">
+            </span>
+            <h1 class="text-2xl">Cadastro de produto realizado com sucesso!</h1>
+            <a href="index.html" class="bg-green text-darkBlue border-none rounded-sm m-10 max-w-xs w-full p-4 uppercase font-extrabold cursor-pointer shadow-second hover:bg-darkBlue transition ease-in-out delay-150 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300">Voltar para home</a>
         </section>
-        
-        <div class="ml-8">
-            <a href="registerProduct.html" class="cursor-pointer">+ Nova transação</a>
-        </div>
+    </main>
 
-        <section class="overflow-x-auto" id="transactions">
-            <table class="w-full py-4 px-8 text-left border-separate border-spacing-y-[0.5rem]">
-                <thead>
-                    <tr class="bg-white">
-                        <th class="py-4 px-8 text-left">Nome</th>
-                        <th class="py-4 px-8 text-left">Data</th>
-                        <th class="py-4 px-8 tex-left">Valor</th>
-                        <th class="py-4 px-8 text-left">Descrição</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody class="opacity-90 bg-white" data-table></tbody>
-            </table>
-        </section>
-    </main> 
-
-    <footer class="bg-darkBlue p-6">
+    <footer class="bg-darkBlue p-8">
         <div class="max-w-6xl m-auto">
             <div class="flex phone:flex-wrap">
                 <div class="w-1/4 px-4 md:w-2/4 md:mb-7 phone:w-full phone:mb-7">
@@ -162,7 +126,6 @@
     </footer>
 
     <script src="./navbar/navbar.js"></script>
-    <script src="./controller/listaClientes-controller.js" type="module"></script>
     <script src="https://kit.fontawesome.com/131a4c7b84.js" crossorigin="anonymous"></script>
     
 </body>

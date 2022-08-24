@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/{index.html,cadastro.html,login.html,recuperar.html,editar_perfil.html,error404.html}",
-    "./src/js/script.js"
+    "./src/{index.html,register.html,login.html,forgotPassword.html,editCustomer.html,error404.html,registerProduct.html,registerCustomer_concluded.html,editProfile.html}",
   ],
   theme: {
     extend: {

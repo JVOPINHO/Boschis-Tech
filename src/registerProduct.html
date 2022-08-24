@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>Boschi's Tech - Cadastrar Produto</title>
+</head>
+<body class="font-NotoSans bg-green">
+
+    <header class="bg-darkBlue">
+        <div>
+            <nav class="w-full m-auto flex justify-between p-4 note:block" role="navigation">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green text-xl font-bold">Boschi's Tech</h1>
+                    <button class="hidden bg-none border-none text-green cursor-pointer text-4xl p-4 note:block" id="responsiveBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="h-auto note:h-0 note:overflow-hidden" id="links-container">
+                    <ul class="flex text-2xl p-8 note:block note:float-left" id="list">
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="index.html">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ml-2">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="error404.html">
+                                <i class="fa-solid fa-address-card"></i>
+                                <span class="ml-2">Sobre nós</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="error404.html">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span class="ml-2">Serviços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="error404.html">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <span class="ml-2">Contato</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="editar_perfil.html">
+                                <i class="fa-solid fa-pen"></i>
+                                <span class="ml-2">Editar o perfil</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-col items-center relative p-4 text-base tracking-widest leading-loose font-bold text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-lightgreen note:block" href="register_product.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="ml-2">Produtos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex flex-col m-8 items-center justify-center">
+        <section class="bg-white rounded-xl w-full max-w-2xl p-7 box-border mb-4 shadow-md">
+            <h1 class="text-3xl mb-4">Novo Produto</h1>
+            <form class="flex flex-col" data-form>
+                <div class="font-light relative mb-4 flex flex-col justify-end box-border">
+                    <input name="name" id="name" class="box-border border-b border-lightGray p-6 px-2 w-full h-12 focus:outline" type="text" placeholder="Nome do produto" required data-name>
+                </div>
+                <div class="font-light relative mb-4 flex flex-col justify-end box-border">
+                    <input name="price" id="price" class="box-border border-b border-lightGray p-6 px-2 w-full h-12 focus:outline" type="number" placeholder="Preço do produto" required data-price>
+                    <span class="text-[#c0cad9] mt-2">Use o sinal - (negativo) para despesas.</span>
+                </div>
+                <div class="font-light relative mb-4 flex flex-col justify-end box-border">
+                    <input name="description" id="description" class="box-border border-b border-lightGray p-6 px-2 w-full h-12 focus:outline" type="text" placeholder="Descrição do produto" required data-description>
+                </div>
+                <div class="font-light relative mb-4 flex flex-col justify-end box-border">
+                    <input name="date" id="date" class="box-border border-b border-lightGray p-6 px-2 w-full h-12 focus:outline" type="date" required data-dateBuy>
+                </div>
+                <button type="submit" class="bg-green text-darkBlue border-none rounded-sm m-4 max-w-xs w-full mx-auto p-4 uppercase font-extrabold cursor-pointer shadow-second hover:bg-darkBlue transition ease-in-out delay-150 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./controller/cadastraClientes-controller.js" type="module"></script>
+    <script src="./navbar/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/131a4c7b84.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

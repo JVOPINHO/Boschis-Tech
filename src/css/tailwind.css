@@ -98,6 +98,14 @@
         transition: all 1s linear;
     }
 
+    .income {
+        color: green;
+    }
+
+    .expense {
+        color: red;
+    }
+
     footer a::after {
         box-shadow: 0 0 0 3px #FFFFFF;
     }
