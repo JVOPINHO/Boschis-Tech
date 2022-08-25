@@ -13,6 +13,27 @@
       "price": "-12",
       "description": "bebida",
       "id": 2
+    },
+    {
+      "name": "hot dog",
+      "date": "2022-08-25",
+      "price": "-7",
+      "description": "hot dog da esquina",
+      "id": 3
+    },
+    {
+      "name": "test",
+      "date": "2022-08-24",
+      "price": "0",
+      "description": "test",
+      "id": 4
+    },
+    {
+      "name": "Pagamento",
+      "date": "2022-08-25",
+      "price": "100",
+      "description": "Recebimento do trampo",
+      "id": 5
     }
   ]
 }
